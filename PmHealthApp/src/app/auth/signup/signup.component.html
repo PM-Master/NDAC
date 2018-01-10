@@ -1,0 +1,24 @@
+<div class="page" style="width: 25%; margin: 20px auto auto;">
+  <form class="form-signin" (ngSubmit)="onSignup(f)" #f="ngForm" style="margin-bottom: 10px">
+    <h2 class="form-signin-heading">Sign Up</h2>
+
+    <label for="email" class="sr-only">Email</label>
+    <input class="form-control" type="email" id="email" name="email" ngModel  placeholder="Email">
+
+    <label for="password" class="sr-only">Password</label>
+    <input
+      class="form-control"
+      type="password"
+      id="password"
+      name="password"
+      ngModel
+      placeholder="Password">
+    <button class="btn btn-lg btn-primary btn-block" type="submit">Sign up</button>
+  </form>
+  <div style="text-align: center">
+    <a routerLink="/login">Login</a>
+  </div>
+</div>
+
+
+

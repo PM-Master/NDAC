@@ -1,0 +1,55 @@
+<nav class="navbar navbar-inverse" style="margin: 10px 15% 0;">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#"><strong>PM Health</strong></a>
+    </div>
+
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-2">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#"><strong>Logout</strong></a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<ol class="breadcrumb" style="margin: 0 15%; border-radius: 0">
+  <li class="breadcrumb-item"><a href="../dashboard">Dashboard</a></li>
+  <li class="breadcrumb-item active">Patients</li>
+</ol>
+<div class="page" style="margin-left: 15%; margin-right: 15%;">
+  <div class="row">
+    <table class="table table-striped table-hover">
+      <thead>
+      <tr>
+        <th>Patient ID</th>
+        <th>Name</th>
+        <th>DOB</th>
+        <th>Gender</th>
+        <th>SSN</th>
+        <th>Race</th>
+        <th>Marital Status</th>
+        <th>Cell Phone</th>
+        <th>Work Phone</th>
+        <th>Home Phone</th>
+        <th>Email</th>
+        <th>Address</th>
+      </tr>
+      </thead>
+      <tbody>
+      <tr *ngFor="let rec of records" style="cursor: pointer;" [routerLink]="['../patient-detail', rec.patientId]">
+        <td>{{ rec.patientId }}</td>
+        <td>{{ rec.name }}</td>
+        <td>{{ rec.dob }}</td>
+        <td>{{ rec.gender }}</td>
+        <td>{{ rec.ssn }}</td>
+        <td>{{ rec.race }}</td>
+        <td>{{ rec.maritalStatus }}</td>
+        <td>{{ rec.cellPhone }}</td>
+        <td>{{ rec.workPhone }}</td>
+        <td>{{ rec.homePhone }}</td>
+        <td>{{ rec.email }}</td>
+        <td>{{ rec.address }}</td>
+      </tr>
+      </tbody>
+    </table>
+  </div>
+</div>

@@ -1,0 +1,65 @@
+body {
+  background-color: lightgrey;
+}
+
+.page {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+  padding: 25px;
+  background: white;
+  margin-bottom: 10px;
+}
+
+.info-field {
+  text-align: left;
+  padding: 0 0 10px 10px;
+}
+
+li {
+  list-style-type: none;
+}
+
+ul {
+  padding: 0;
+}
+
+small {
+  color: black;
+  /*text-decoration: underline;*/
+  font-style: italic;
+  font-weight: bold;
+}
+
+.rec-comp {
+  background-color: #f2f2f2;
+}
+
+.comp-header {
+  border-bottom: solid #008cba;
+}
+
+.selected {
+  background-color: #008cba;
+}
+
+table tr.active td {
+  background-color: #008cba;
+  color: white;
+}
+
+.selected {
+  background-color: #008cba;
+  color: white;
+}
+
+.selected:hover {
+  background-color: #007399;
+}
+
+textarea {
+  width: 100%;
+  -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+  -moz-box-sizing: border-box;    /* Firefox, other Gecko */
+  box-sizing: border-box;
+}
+

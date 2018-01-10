@@ -1,0 +1,53 @@
+.info-field {
+  text-align: left;
+  padding: 0 0 10px 10px;
+}
+
+li {
+  list-style-type: none;
+}
+
+ul {
+  padding: 0;
+}
+
+small {
+  color: black;
+  /*text-decoration: underline;*/
+  font-style: italic;
+  font-weight: bold;
+}
+
+.rec-comp {
+  background-color: #f2f2f2;
+}
+
+h3 {
+  border-bottom: solid #008cba;
+}
+
+.selected {
+  background-color: #008cba;
+}
+
+table tr.active td {
+  background-color: #008cba;
+  color: white;
+}
+
+.selected {
+  background-color: #008cba;
+  color: white;
+}
+
+.selected:hover {
+  background-color: #007399;
+}
+
+textarea {
+  width: 100%;
+  -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+  -moz-box-sizing: border-box;    /* Firefox, other Gecko */
+  box-sizing: border-box;
+}
+

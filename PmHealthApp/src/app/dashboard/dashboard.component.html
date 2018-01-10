@@ -1,0 +1,26 @@
+<nav class="navbar navbar-inverse" style="margin: 10px 15% 0;">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#"><strong>PM Health</strong></a>
+    </div>
+
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-2">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#"><strong>Logout</strong></a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<ol class="breadcrumb" style="margin: 0 15%; border-radius: 0">
+  <li class="breadcrumb-item active">Dashboard</li>
+</ol>
+<div class="page" style="margin-left: 15%; margin-right: 15%;">
+  <div class="row">
+    <div class="col-lg-3" *ngFor="let link of links" style="text-align: center; margin-bottom: 10px; cursor: pointer" routerLink='{{toRouterLink(link)}}'>
+      <div class="" [ngStyle]="{backgroundColor: getBackColor(link), margin: 0}">
+        <div style="height: 100px"></div>
+      </div>
+      <h3 class="" [ngStyle]="{backgroundColor: getFooterBackColor(link), margin: 0}" style="color: white; padding: 5px; font-size: 1em"><strong>{{ link }}</strong></h3>
+    </div>
+  </div>
+</div>

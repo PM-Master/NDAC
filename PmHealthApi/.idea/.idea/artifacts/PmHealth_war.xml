@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="PmHealth:war">
+    <output-path>$PROJECT_DIR$/target</output-path>
+    <root id="archive" name="pmhealth.war">
+      <element id="artifact" artifact-name="PmHealth:war exploded" />
+    </root>
+  </artifact>
+</component>
